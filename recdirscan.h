@@ -2,10 +2,12 @@
  * Copyright (c) 2017 Eduard Bloch <edi@gmx.de>
  * All rights reserved
  *
- * License: WTFPL
+ * License: MIT
  *
  */
-#pragma once
+
+#ifndef XDIRSCAN_HEADER_BOILERPLATE
+#define XDIRSCAN_HEADER_BOILERPLATE
 
 #include <string>
 #include <functional>
@@ -23,3 +25,4 @@ typedef std::function<bool(const std::string &, const struct stat&)> visitorCB;
 bool FindFiles(const std::string & sRootDir, const visitorCB& onDirFile,
 		const visitorCB& onDirLeaving = xdirscan::visitorCB(), bool bFollowSymlinks = true);
 }
+#endif // XDIRSCAN_HEADER_BOILERPLATE

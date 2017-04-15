@@ -2,7 +2,7 @@
  * Copyright (c) 2017 Eduard Bloch <edi@gmx.de>
  * All rights reserved
  *
- * License: WTFPL
+ * License: MIT
  *
  */
 
